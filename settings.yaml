@@ -1,0 +1,39 @@
+DEBUG: True
+RUNLEVEL: DEBUG
+
+# for debug
+DATABASES:
+    ENGINE: mysql
+    NAME: beta-monitor_service
+    HOST: localhost
+    PORT: 3306
+    USERNAME: root
+    PASSWORD: 111
+    RECONNECTTIME: 3600
+    POOLSIZE: 100
+
+ELASTICSEARCH:
+    HOST:
+        - 192.168.152.34
+        - 192.168.152.35
+    PORT: 9200
+    INDEX: gen
+    QUERYINDEX:	user
+	HEARTINDEX: heart
+	TRACEINDEX: trace
+	ACCOUNTINDEX: account
+	APPID: 74ed8706-5d8e-45a6-bab5-9e26109e847e
+
+REDIS:
+    HOST: 192.168.152.34
+    PORT: 6379
+    DBNUM: 14
+
+INNER_TOKEN: '88888888'
+
+EMAIL:
+    HOST: bjmail.kingsoft.com 
+    PORT: 587
+    ACCOUNT: ksyun_game_service 
+    PASSWORD: LIUYICHEN11qq1
+    POSTFIX: kingsoft.com
